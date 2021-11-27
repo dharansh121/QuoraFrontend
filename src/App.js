@@ -11,13 +11,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <Home />
-        </Route>
-        <Route exact path="/quoramain">
+        </Route> */}
+        <Route exact path="/">
           <QuoraMain />
         </Route>
-        <Route exact path="/quoramain/savedPost">
+        <Route exact path="/savedPost">
           <SavedPost />
         </Route>
         <Route exact path="/spicpi">
