@@ -1,0 +1,340 @@
+.qHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background-color: white;
+    width: 100%;
+
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 5px 8px -4px rgb(0 0 0 / 50%);
+}
+
+.qHeader__logo > img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.qHeader__icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qHeader__icon > .MuiSvgIcon-root {
+    font-size: xx-large;
+    background-color: white;
+    padding: 5px 20px;
+    color: #14213d;
+}
+
+.qHeader__icon > .MuiSvgIcon-root:hover {
+    background-color: #14213d;
+    border-radius: 10px;
+    color: #fca311;
+    /* font-size: xx-large; 
+    animation-name: iconResize;
+    animation-duration: 0.3s; */
+}
+
+/* @keyframes iconResize {
+    from {
+        color: gray;
+        font-size: x-large;
+    }
+    to {
+        color: #b92b27;
+        font-size: xx-large;
+    }
+} */
+
+.qHeader__input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.qHeader__input > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(49, 49, 49);
+}
+
+.qHeader__input > .MuiSvgIcon-root {
+    color: gray;
+}
+
+.qHeader__Rem {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.qHeader__avatar {
+    cursor: pointer;
+}
+
+.qHeader__Rem > .MuiSvgIcon-root {
+    font-size: xx-large;
+    color: gray;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.qHeader__Rem > .MuiSvgIcon-root:hover {
+    color: #b92b27;
+}
+
+.qHeader__Rem > .MuiButton-root {
+    color: white;
+    background: #263658;
+    text-transform: inherit;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.qHeader__Rem > .MuiButton-root:hover {
+    color: #ffffff;
+    background: #6174a0;
+}
+
+/* modal styling */
+.modal__title {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+
+    background: #524f4f;
+}
+
+.modal__title > h5 {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    width: 65%;
+    height: 30px;
+    left: 35%;
+    top: 11px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #e5e5e5;
+}
+
+.modal__info {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.modal__info > p {
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #b0b0b0;
+}
+
+.modal__info > p > span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #264653;
+}
+
+.modal__Field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+}
+
+.modal__field__component {
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+.modal__field__component > input {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex: 0.8; */
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+
+.modal__field__component > span {
+    width: 50%;
+    background-color: #354a77;
+    color: #fff;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+
+    border-radius: 4px;
+}
+
+.modal__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    /* padding-bottom: 0%; */
+    margin-right: -20px;
+    border-top: 1px solid lightgray;
+}
+
+.modal__buttons > button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.modal__buttons > .cancle {
+    margin-left: auto;
+    background-color: #fca311;
+    color: #14213d;
+    font-weight: 400;
+}
+
+.modal__buttons > .add {
+    background-color: #14213d;
+    color: #fca311;
+    font-weight: 700;
+}
+
+/*-------------------------- for tags ----------------------------------*/
+
+.tag-wrapper > p {
+    /* border-bottom: 1px black dashed; */
+    font-size: 1.2em;
+    color: #49536b;
+    font-weight: 700;
+    background-color: rgb(241, 241, 241);
+    /* border-radius: 5px; */
+    border-bottom: 1px #6174a0 solid;
+}
+
+.tag-wrapper {
+    /* background: white; */
+    background: rgba(229, 229, 229, 0.45);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 5px;
+    /* border-bottom: 1px #14213d solid; */
+    /* box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4); */
+}
+.tag {
+    display: inline-block;
+    position: relative;
+    margin: 5px 10px 5px 0px;
+}
+.tag input[type='checkbox'] {
+    opacity: 0;
+    position: absolute;
+    z-index: 300;
+    cursor: pointer;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tag input[type='checkbox']:hover + label {
+    background: #fca311;
+}
+
+.tag label {
+    padding: 7px;
+    position: relative;
+    z-index: 200;
+    color: #14213d;
+    display: block;
+    border-radius: 16px;
+    background: white;
+    transition: all 0.08s ease-in;
+}
+
+.tag .fa {
+    position: absolute;
+    z-index: 250;
+    right: 11px;
+    top: 9px;
+    color: white;
+    line-height: 0.95;
+}
+.tag .fa-check {
+    display: none;
+    top: 8px;
+    right: 10px;
+    transition: all 0.08s ease-in;
+}
+.tag input[type='checkbox']:checked + label {
+    background: #354a77;
+    color: white;
+    -webkit-animation: flick 0.08s;
+    animation: flick 0.08s;
+}
+.tag input[type='checkbox']:checked ~ .fa-plus {
+    display: none;
+}
+.tag input[type='checkbox']:checked ~ .fa-check {
+    -webkit-animation: flick 0.08s;
+    animation: flick 0.08s;
+    display: block;
+}
+@-webkit-keyframes flick {
+    60% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes flick {
+    60% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
